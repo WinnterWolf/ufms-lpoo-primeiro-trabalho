@@ -25,9 +25,6 @@ public class Test {
         dados = sc.nextLine();
         Aluno aluno2 = new Aluno(dados);
 
-        System.out.printf("Digite o nome do segundo aluno: ");
-        aluno2.setNome(sc.nextLine());
-        System.out.printf("Digite o rga do segundo aluno: ");
-        aluno2.setRga(sc.nextLine());
+
     }
 }
