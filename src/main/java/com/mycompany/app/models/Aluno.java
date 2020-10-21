@@ -5,12 +5,20 @@ public class Aluno extends Pessoa {
     private String rga;
 
 
+    public Aluno(){
+        super();
+    }
+
     public Aluno(String dados){
         super();
-        String[] d = dados.split("");
+        String[] d = dados.split(" ");
+        String nome = d[1];
 
-        this.setRga(d[1]);
-        this.setNome(d[0]);
+        this.setRga(d[0]);
+        for(int i=2;i<d.length;i++){
+            nome += " " + d[i];
+        }
+        this.setNome(nome);
     }
 
     @Override
